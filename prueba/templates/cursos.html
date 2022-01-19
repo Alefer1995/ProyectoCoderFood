@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+    <p>Lista de cursos disponibles</p>
+
+    
+    <ul>
+    {% for curso in lista %}
+        <li>{{curso.curso}}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
